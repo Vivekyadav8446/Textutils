@@ -1,0 +1,103 @@
+/* Base Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar Styles */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler {
+  background: transparent !important;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+body.dark .navbar,
+body.dark .footer {
+  background-color: #212529 !important;
+}
+
+body.dark .card,
+body.dark .list-group-item {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+body.dark .form-control {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-color: #495057;
+}
+
+/* Light Mode Styles */
+body.light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+body.light .navbar {
+  background-color: #e3f2fd;
+}
+
+/* Layout Styles */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* About Page Styles */
+.developer-image {
+  transition: all 0.3s ease;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid;
+}
+
+.developer-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+  
+  .navbar-nav {
+    margin-bottom: 1rem;
+  }
+  
+  .d-flex.align-items-center {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .developer-image {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
